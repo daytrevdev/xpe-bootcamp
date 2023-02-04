@@ -1,0 +1,34 @@
+<html>
+<script>
+
+    /*
+    Se o número indicado for 20
+    A soma dos múltiplos de 3 OU 5 = será 78
+    
+    Múltiplos de 3 menores que 20
+    3 6 9 12 15 18 - soma: 63
+    
+    Múltiplos de 5 menores que 20
+    5 10 15 - soma: 30
+    
+    Porém, como o número 15 é comum a ambos deverá ser somado APENAS UMA VEZ
+    Pois trata-se de uma condição OU/OR da lógica
+    Em que apenas uma sentença sendo verdadeira, temos a sentença global como verdadeira
+    */
+
+    function SomaMultiplos3ou5(numero) {
+        var somaMultiplos = 0;
+
+        for (var i = 3; i < numero; i++) {
+
+            if (i % 3 === 0 || i % 5 === 0) {
+                somaMultiplos = somaMultiplos + i;
+            }
+        }
+
+        return somaMultiplos;
+    }
+
+</script>
+
+</html>
